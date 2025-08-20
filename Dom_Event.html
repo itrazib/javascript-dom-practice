@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        my name is razib
+    </h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus animi adipisci eum ducimus nesciunt dolores quia at omnis nam!</p>
+    <!-- first method in onclick Event -->
+    <button onclick="console.log('20033')">Explore more</button>
+    <button onclick="console.log('33')">Explore more</button>
+
+    <!-- second method -->
+     <button onclick="makeBlue()">Make blue</button> <br>
+     <button onclick="makeBlueViolet()">Make blueViolet</button>
+
+     <!-- third method using ID-->
+      <button id="btn-make-yel">Make Yellow</button>
+      <!-- another -->
+       <button id="btn-make-purple">make purple</button>
+
+       <!-- fourth mathod  using addEventListener-->
+        <button id="btn-make-red">make Red</button>
+
+<script>
+    document.getElementById('btn-make-red').addEventListener('click', 
+    function() {
+    document.body.style.backgroundColor = 'blue';
+});
+
+</script>
+     <script src="js/first.js"></script>
+    
+</body>
+</html>

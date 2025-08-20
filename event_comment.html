@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment Eveny event-handler</title>
+    <style>
+        .comment{
+            border: 2px solid green;
+            background-color: blueviolet;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h3>All comment here</h3>
+        <div id="comment-container">
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum facilis dolores. Pariatur facere ratione beatae dolor non deserunt molestiae?</p>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, corporis.</p>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus adipisci totam explicabo atque aliquid fugit!</p>
+        </div>
+        <textarea name="" id="post-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post">Post Comment</button>
+    </main>
+    <script>
+        document.getElementById('btn-post').addEventListener('click', function(){
+            const postComment = document.getElementById('post-comment');
+            const comment = postComment.value;
+            
+            const commentDiv = document.getElementById('comment-container');
+            // console.log(commentDiv)
+            const commentP = document.createElement('p');
+            commentP.classList.add('comment');
+            commentP.innerText = comment;
+        //   console.log(commentP)
+          commentDiv.appendChild(commentP)
+        })
+    </script>
+</body>
+</html>

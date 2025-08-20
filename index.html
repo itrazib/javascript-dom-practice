@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" class="name">This is my first Dom(Document object module)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident praesentium repudiandae et, exercitationem corporis excepturi totam facere eaque reprehenderit alias?</p>
+
+    <ul>
+        <li class="para">apple</li>
+        <!-- <li class="para">Mango</li> -->
+        <!-- <li class="para">Banana</li> -->
+        <li>WAtermelon</li>
+    </ul>
+
+    <script>
+        // getElementsByTagName
+        // const paragraph = document.getElementsByTagName('li');
+
+        // console.log(paragraph);
+        // for(const li of paragraph){
+        //     console.log(li.innerText);
+        // }
+
+        // getElementById
+        // const head = document.getElementById('heading');
+        // console.log(head.innerText);
+        // head.innerText = 'This is my first class in javascript Dom'; //innerText change kora jay
+        // console.log(head.innerText)
+
+        // getElementsByClassName
+        const a = document.getElementsByClassName('para');
+        
+        for(const element of a){
+            console.log(element.innerText)
+        }
+
+        // querySelector
+       const select =  document.querySelector('para');
+
+       const element = document.getElementById('heading');
+       
+
+    </script>
+</body>
+</html>
