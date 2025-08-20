@@ -25,19 +25,6 @@
         <br>
         <button id="btn-post">Post Comment</button>
     </main>
-    <script>
-        document.getElementById('btn-post').addEventListener('click', function(){
-            const postComment = document.getElementById('post-comment');
-            const comment = postComment.value;
-            
-            const commentDiv = document.getElementById('comment-container');
-            // console.log(commentDiv)
-            const commentP = document.createElement('p');
-            commentP.classList.add('comment');
-            commentP.innerText = comment;
-        //   console.log(commentP)
-          commentDiv.appendChild(commentP)
-        })
-    </script>
+    <script src="js/comment.js"></script>
 </body>
 </html>
